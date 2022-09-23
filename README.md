@@ -1,6 +1,6 @@
 # Dashboard-React
 Dashboard applicaiton using React, redux
 
-Note - this project is not finished yet
+<b>Note - this project is not finished yet</b>
 
 https://dashboard-glorytaste.netlify.app/
