@@ -1,0 +1,117 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .navbar{
+        @apply flex justify-between text-black bg-yellow-400;
+    }
+} */
+.navbar {
+    @apply flex justify-between items-center h-[8vh] text-yellow-500 bg-white pl-[1rem] pr-[2rem];
+    border-bottom: 1px solid rgb(255, 221, 0);    
+}
+.nav-left{
+    @apply flex items-center;
+}
+.webname{
+    @apply flex items-center w-[15rem];
+}
+.webname img{
+    @apply w-[3rem] h-[3rem];
+}
+.webname span{
+    @apply font-bold
+}
+.nav-menu-icon {
+    border: 2px solid gold;
+    @apply w-[2rem] h-[1.8rem] cursor-pointer;
+    padding: 2px;
+    border-radius: 3px;
+}
+.nav-menu-icon:hover{
+    background-color: gold;
+    color: white;
+}
+.search-box{
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: gold;
+    border-radius: 10px;
+    border: 2px solid gold;
+}
+
+.searchbar{
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    padding: 0.1rem 1rem;
+    font-size: 1rem;
+}
+.searchbar:focus{
+    outline: none;
+}
+.search-icon-button{
+    color: white;
+    width: 2rem;
+    font-size: 1rem;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.search-icon-button:hover{
+    color: rgb(50, 48, 42);
+}
+.nav-right{
+    @apply flex;
+}
+.nav-noti, .nav-msg, .nav-pending{
+    @apply w-[2.5rem] h-[2.5rem] cursor-pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.8rem;
+}
+.nav-noti:hover, .nav-msg:hover, .nav-pending:hover{
+    transform: scale(1.05);
+    color: black;
+}
+.nav-noti-icon, .nav-msg-icon, .nav-pending-icon{
+    @apply w-[2rem] h-[2rem];
+    align-self: center;
+}
+.noti-number, .msg-number, .pending-number{
+    z-index: 4;
+    position: absolute;
+    background-color: rgb(255, 89, 0);
+    color: white;
+    font-size: 0.7em;
+    font-weight: 600;
+    top: 0;
+    right: 3px;
+    border-radius: 50%;
+    padding: 2px;
+}
+.nav-admin{
+    display: flex;
+    align-items: center;
+    border: 2px solid gold;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.admin-name{
+    color: gold;
+    margin-right: 0.5rem;
+}
+.admin-pic{
+    width: 1.7rem;
+    height: 1.7rem;
+}
+.admin-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

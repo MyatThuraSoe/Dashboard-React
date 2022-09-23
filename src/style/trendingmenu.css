@@ -1,0 +1,46 @@
+.trending-menu table tr{
+    border-bottom: 1px dotted rgb(90, 81, 48);
+}
+
+.trending-menu table tr td:nth-child(1){
+    width: 2.5rem;
+    text-align: center;
+    border-right: 1px dashed rgb(90, 81, 48);
+}
+.trending-menu table tr td:nth-child(2) {
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    font-weight: 600;
+}
+.trending-menu table thead tr th{
+    padding: 0.5rem;
+}
+.trending-menu table tbody tr td{
+    padding: 0.35rem 0;
+}
+.trending-menu table tr td:nth-child(3){
+    text-align: right;
+    padding-right: 0.5rem;
+}
+.trending-menu table tr td:nth-child(4), .trending-menu table tr td:nth-child(5){
+    text-align: center;
+    background-color: rgba(216, 235, 252, 0.5);
+    
+}
+.trending-menu{
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px rgb(202, 202, 202), -3px -3px 10px rgb(204, 204, 204);
+}
+.highlightcolumn{
+    background-color: rgb(221, 205, 145);
+}
+.trending-menu > h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5e2650;
+    margin-bottom: 0.5rem;
+}

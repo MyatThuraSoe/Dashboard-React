@@ -1,0 +1,51 @@
+.widget-pending{
+    margin-left: 1rem;
+    background-color: white;
+    width: 18rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(202, 202, 202) , -3px -3px 10px rgb(204, 204, 204);
+}
+.widget-pending-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dashed gold;
+    padding-bottom: 5px;
+}
+.widget-pending-icon{
+    font-size: 2rem;
+    background-color: #fbbd08;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+.widget-pending-title{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+.widget-pending-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.donut-chart{
+    width: 12rem;
+    height: 10rem;
+    
+}
+.widget-total-pending{
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+
+    padding: 3px;
+    /* background-color: #ebe3cb; */
+}
+.widget-total-pending span{
+    color: #ed5c01;
+    font-size: 1.4rem;
+    font-weight: 800;
+}

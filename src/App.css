@@ -1,0 +1,8 @@
+.main-container{
+    display: flex;
+}
+.page-container{
+    color: black;
+    height: 92vh;
+    width: calc(100% - 16rem);
+}

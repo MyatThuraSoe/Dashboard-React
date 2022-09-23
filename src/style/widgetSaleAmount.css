@@ -1,0 +1,57 @@
+.widget-sale-amount{
+    margin-left: 1rem;
+    background-color: white;
+    width: 18rem;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(202, 202, 202), -3px -3px 10px rgb(204, 204, 204);
+}
+.wsa-top-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px dashed gold;
+    padding-bottom: 5px;
+}
+.wsa-icon{
+    font-size: 2rem;
+    background-color: #fbbd08;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+}.wsa-title{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+.wsa-bottom-row{
+    width: 100%;
+}
+.wsa-today, .wsa-this-week{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    margin: 20px 5px;
+}
+.wsa-text-container{
+    width: 70%;
+}
+.wsa-chart-container{
+    width: 20%;
+    font-size: 3rem;
+}
+.stock-icons{
+    float: right;
+}
+.up{
+    color: rgb(20, 197, 20);
+}
+.down{
+    color: rgb(250, 80, 80);
+}
+.wsa-amount{
+    color: rgb(28, 84, 0);
+    font-weight: 700;
+    font-size: 1.3rem;
+}

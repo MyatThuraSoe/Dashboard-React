@@ -1,0 +1,28 @@
+.Dashboard {
+    justify-content: center;
+    height: 92vh;
+    overflow-y: scroll;
+}
+
+.Dashboard>h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #5e2650;
+}
+
+.top-row {
+    margin-top: 1rem;
+    display: flex;
+    height: 15.5rem;
+}
+
+.second-row {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+
+    flex: auto auto;
+}
