@@ -1,8 +1,7 @@
 .widget-balance{
-    
-    margin-left: 1rem;
     background-color: white;
     width: 18rem;
+    height: fit-content;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgb(202, 202, 202), -3px -3px 10px rgb(204, 204, 204);

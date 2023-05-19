@@ -2,6 +2,7 @@
     justify-content: center;
     height: 92vh;
     overflow-y: scroll;
+    
 }
 
 .Dashboard>h3 {
@@ -11,8 +12,16 @@
     margin-top: 10px;
     color: #5e2650;
 }
+.dashboard-widgets{
+    display: flex;
+    flex-wrap: wrap;
 
-.top-row {
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* .top-row {
     margin-top: 1rem;
     display: flex;
     height: 15.5rem;
@@ -25,4 +34,14 @@
     display: flex;
 
     flex: auto auto;
+} */
+.burgerBackground{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 150px;
 }

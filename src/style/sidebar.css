@@ -14,10 +14,7 @@
     border-bottom: 1px solid yellow;
     font-weight: 600;
 }
-.sidebar #active{
-    background-color: rgb(214, 207, 68);
-    color: white;
-}
+
 .sidebar-item:hover{
     opacity: 0.8;
     background-color: rgb(227, 227, 135);
@@ -30,4 +27,9 @@
 }
 .sidebar-item span{
     margin-left: 1rem;
+    color: brown;
+}
+.sidebar #active {
+    background-color: rgb(255, 255, 255);
+    color: gold !important;
 }

@@ -1,0 +1,68 @@
+.feedback{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+.feedback-profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.feedback-profile-container img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.feedback-text-container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 5px 10px 5px 0px;
+}
+.feedback-top{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.feedback-name{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.feedback-email{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    transform: translateY(-5px);
+}
+.feedback-rating{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+}
+.feedback-rating img{
+    width: 1rem;
+    height: 1rem;
+}
+.feedback-text{
+    margin-top: 5px;
+}
+.feedback.hidden {
+    opacity: 0.5;
+}
+
+.feedback-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.hide-btn,
+.delete-btn {
+    margin-left: 10px;
+}

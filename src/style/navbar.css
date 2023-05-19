@@ -7,8 +7,7 @@
     }
 } */
 .navbar {
-    @apply flex justify-between items-center h-[8vh] text-yellow-500 bg-white pl-[1rem] pr-[2rem];
-    border-bottom: 1px solid rgb(255, 221, 0);    
+    @apply flex justify-between items-center h-[8vh] text-yellow bg-white pl-[1rem] pr-[2rem] border-b border-yellow;  
 }
 .nav-left{
     @apply flex items-center;
@@ -23,22 +22,15 @@
     @apply font-bold
 }
 .nav-menu-icon {
-    border: 2px solid gold;
-    @apply w-[2rem] h-[1.8rem] cursor-pointer;
-    padding: 2px;
-    border-radius: 3px;
+    
+    @apply w-[2rem] h-[1.8rem] cursor-pointer border-2 border-solid border-yellow p-0 rounded-sm;
+
 }
 .nav-menu-icon:hover{
-    background-color: gold;
-    color: white;
+    @apply bg-yellow text-white;
 }
 .search-box{
-    margin-left: 2rem;
-    display: flex;
-    align-items: center;
-    background-color: gold;
-    border-radius: 10px;
-    border: 2px solid gold;
+    @apply ml-8 flex items-center bg-gold rounded-lg border-2 border-gold;
 }
 
 .searchbar{
@@ -51,17 +43,10 @@
     outline: none;
 }
 .search-icon-button{
-    color: white;
-    width: 2rem;
-    font-size: 1rem;
-    background-color: gold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    @apply w-8 text-base flex justify-center items-center cursor-pointer;
 }
 .search-icon-button:hover{
-    color: rgb(50, 48, 42);
+    color: white;
 }
 .nav-right{
     @apply flex;
@@ -99,16 +84,16 @@
     align-items: center;
     border: 2px solid gold;
     border-radius: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px;
 }
 .admin-name{
     color: gold;
     margin-right: 0.5rem;
 }
 .admin-pic{
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 1.6rem;
+    height: 1.6rem;
+
 }
 .admin-pic img{
     width: 100%;

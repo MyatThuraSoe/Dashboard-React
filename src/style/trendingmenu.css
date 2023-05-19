@@ -28,12 +28,18 @@
     
 }
 .trending-menu{
-    width: fit-content;
+    max-width: 31rem;
     padding: 1rem;
     border-radius: 10px;
+    overflow-x: scroll;
+
     background-color: rgb(255, 255, 255);
     border: 5px solid rgb(255, 255, 255);
     box-shadow: 3px 3px 10px rgb(202, 202, 202), -3px -3px 10px rgb(204, 204, 204);
+}
+.trending-menu table{
+    width: auto;
+    height: auto;
 }
 .highlightcolumn{
     background-color: rgb(221, 205, 145);
@@ -44,3 +50,22 @@
     color: #5e2650;
     margin-bottom: 0.5rem;
 }
+ /* width */
+ .trending-menu::-webkit-scrollbar {
+     height: 5px;
+ }
+
+ /* Track */
+.trending-menu::-webkit-scrollbar-track {
+     background: rgb(207, 206, 206);
+ }
+
+ /* Handle */
+.trending-menu::-webkit-scrollbar-thumb {
+     background: #dc3c3c;
+ }
+
+ /* Handle on hover */
+.trending-menu::-webkit-scrollbar-thumb:hover {
+     background: #1d268f;
+ }

@@ -1,0 +1,24 @@
+.feedbackPage{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+.heading{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.feedback-container{
+    display: flex;
+    justify-content: center;
+}
+.feedbacklist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
