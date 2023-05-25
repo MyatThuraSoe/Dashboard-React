@@ -1,0 +1,77 @@
+.order-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px dotted #dadada;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background-color: white;
+}
+
+.order-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.first-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.second-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.order-id {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.order-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.order-total-amount {
+  font-size: 16px;
+}
+
+.order-status {
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+.order-status:hover {
+  background-color: rgb(197, 197, 197);
+  color: rgb(255, 255, 255) !important;
+}
+
+.order-waiting-time {
+  font-size: 14px;
+  color: #888;
+}
+
+.order-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.order-actions button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #a2a2a2;
+}
+
+.order-actions button:hover {
+  background-color: #ddd;
+}

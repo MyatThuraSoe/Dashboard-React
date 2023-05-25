@@ -2,10 +2,12 @@ import React from "react";
 import "../style/sidebar.css";
 import { Link } from "react-router-dom";
 import { IoNotificationsCircleSharp } from "react-icons/io5";
-import { MdDashboard } from "react-icons/md";
-import { FaUser } from "react-icons/fa";
-import { RiGalleryFill } from "react-icons/ri";
+import { MdOutlineHome } from "react-icons/md";
+import { BiUser } from "react-icons/bi";
+import { MdOutlinePhotoLibrary } from "react-icons/md";
 import { MdGroupAdd } from "react-icons/md";
+import { TbCheckupList } from "react-icons/tb";
+import { VscFeedback } from "react-icons/vsc";
 
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -37,9 +39,21 @@ function Sidebar() {
           onClick={() => dispatch(changePathname("/"))}
         >
           <div className="sidebar-item-icon">
-            <MdDashboard />
+            <MdOutlineHome />
           </div>
           <span>Dashboard</span>
+        </div>
+      </Link>
+      <Link to="/orderpage">
+        <div
+          className="sidebar-item"
+          id={sidebarState.selectedpage == "/orderpage" ? "active" : ""}
+          onClick={() => dispatch(changePathname("/orderpage"))}
+        >
+          <div className="sidebar-item-icon">
+            <TbCheckupList />
+          </div>
+          <span>Current Orders</span>
         </div>
       </Link>
       <Link to="/customers">
@@ -49,7 +63,7 @@ function Sidebar() {
           onClick={() => dispatch(changePathname("/customers"))}
         >
           <div className="sidebar-item-icon">
-            <FaUser />
+            <BiUser />
           </div>
           <span>Top Customers</span>
         </div>
@@ -61,7 +75,7 @@ function Sidebar() {
           onClick={() => dispatch(changePathname("/gallery"))}
         >
           <div className="sidebar-item-icon">
-            <RiGalleryFill />
+            <MdOutlinePhotoLibrary />
           </div>
           <span>Gallery</span>
         </div>
@@ -85,7 +99,7 @@ function Sidebar() {
           onClick={() => dispatch(changePathname("/feedback"))}
         >
           <div className="sidebar-item-icon">
-            <MdGroupAdd />
+            <VscFeedback />
           </div>
           <span>Feedback</span>
         </div>

@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import Customers from "./pages/Customers.js";
 import AddCustomer from "./pages/AddCustomers.js";
 import FeedbackPage from "./pages/FeedbackPage.js";
+import OrderPage from "./pages/OrderPage";
 
 import Gallery from "./extraapps/gallery/index";
 
@@ -45,6 +46,8 @@ function App() {
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/addcustomer" element={<AddCustomer />} />
               <Route path="/feedback" element={<FeedbackPage />} />
+              <Route path="/orderpage" element={<OrderPage />} />
+              {/* <Route path="/orderpage/order/:id" element={<OrderDetail />} /> */}
             </Routes>
           </div>
         </div>

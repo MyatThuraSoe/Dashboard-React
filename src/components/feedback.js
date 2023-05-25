@@ -3,6 +3,7 @@ import "../style/feedback.css";
 
 export function Feedback(props) {
   const [isHidden, setIsHidden] = useState(false);
+  const [deleteFB, setDeleteFB] = useState(false);
 
   const Image = require(`../assets/img/${props.img}`);
   const goldStar = require(`./../assets/img/goldStar.png`);
@@ -33,11 +34,16 @@ export function Feedback(props) {
 
   const handleDeleteClick = () => {
     // Perform delete action here
-    // You can remove the feedback from the UI or send a request to delete it from the backend
+    // You can remove the feedback from the UI
+    setDeleteFB(true);
   };
 
   return (
-    <div id="feedback" className={`feedback ${isHidden ? "hidden" : ""}`}>
+    <div
+      id="feedback"
+      className={`feedback ${isHidden ? "hidden" : ""}`}
+      style={{ display: deleteFB ? "none" : "flex" }}
+    >
       <div className="feedback-profile-container">
         <img src={Image} alt="feedback profile icon" />
       </div>
