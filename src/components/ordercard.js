@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../style/ordercard.css";
 
 const OrderCard = ({ order }) => {
   const { orderID, name, totalCost, orderStatus, waitingTime } = order;
+  const navigate = useNavigate();
 
   const [waitTime, setWaitingTime] = useState(waitingTime);
 
@@ -28,6 +30,9 @@ const OrderCard = ({ order }) => {
       clearInterval(timer); // Clean up the interval when the component is unmounted
     };
   }, []);
+  const handleDetailsClick = () => {
+    navigate(`/orderpage/order/${orderID}`);
+  };
 
   return (
     <div className="order-card">
@@ -47,7 +52,9 @@ const OrderCard = ({ order }) => {
             </div>
           </div>
           <div className="order-actions">
-            <button className="details-button">Details</button>
+            <button className="details-button" onClick={handleDetailsClick}>
+              Details
+            </button>
             <button className="edit-button">Edit</button>
             <button className="delete-button">Delete</button>
           </div>

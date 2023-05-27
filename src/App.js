@@ -8,6 +8,7 @@ import Customers from "./pages/Customers.js";
 import AddCustomer from "./pages/AddCustomers.js";
 import FeedbackPage from "./pages/FeedbackPage.js";
 import OrderPage from "./pages/OrderPage";
+import OrderDetails from "./components/orderdetails";
 
 import Gallery from "./extraapps/gallery/index";
 
@@ -47,7 +48,7 @@ function App() {
               <Route path="/addcustomer" element={<AddCustomer />} />
               <Route path="/feedback" element={<FeedbackPage />} />
               <Route path="/orderpage" element={<OrderPage />} />
-              {/* <Route path="/orderpage/order/:id" element={<OrderDetail />} /> */}
+              <Route path="/orderpage/order/:id" element={<OrderDetails />} />
             </Routes>
           </div>
         </div>
