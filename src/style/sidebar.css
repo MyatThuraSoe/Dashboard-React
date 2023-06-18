@@ -1,35 +1,55 @@
-.sidebar{
-    width: 16rem;
-    height: 92vh;
-    /* overflow-y: scroll; */
-    border-right: 2px solid gold;
-    display: flex;
-    flex-direction: column;
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+  height: calc(100vh - 8vh);
+  position: relative;
+  border-right: 2px solid gold;
 }
-.sidebar-item{
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-    height: 2.7rem;
-    border-bottom: 1px solid yellow;
-    font-weight: 600;
+.sidebar {
+  width: 100%;
+  height: fit-content;
+  /* overflow-y: scroll; */
+
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  height: 2.7rem;
+  border-bottom: 1px solid yellow;
+  font-weight: 600;
 }
 
-.sidebar-item:hover{
-    opacity: 0.8;
-    background-color: rgb(227, 227, 135);
-    color: white;
+.sidebar-item:hover {
+  opacity: 0.8;
+  background-color: rgb(227, 227, 135);
+  color: white;
 }
-.sidebar-item-icon *{
-    color: gold;
-    font-size: 1.5rem;
-    margin-left: 0.5rem;
+.sidebar-item-icon * {
+  color: gold;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
 }
-.sidebar-item span{
-    margin-left: 1rem;
-    color: brown;
+.sidebar-item span {
+  margin-left: 1rem;
+  color: brown;
 }
 .sidebar #active {
-    background-color: rgb(255, 255, 255);
-    color: gold !important;
+  background-color: rgb(255, 255, 255);
+  color: gold !important;
+}
+.sidebar-bottom {
+  /* Styles for the bottom div */
+  background-color: inherit;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 8vh;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
 }

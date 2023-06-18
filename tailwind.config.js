@@ -9,7 +9,7 @@ module.exports = {
         yellow: "#e4b81d",
         white: "#f5f0e1",
         gray: "#9c8c85",
-        gold: "ffd700",
+        gold: "#ffd700",
       },
     },
   },

@@ -39,6 +39,23 @@ const OrderDetails = () => {
 
     return new Date(dateTime).toLocaleString(undefined, options);
   };
+  function calculateTotalAmount() {
+    let total = 0;
+
+    // Iterate through each item in the cart and calculate the subtotal
+    orderDetails.cart.forEach((item) => {
+      total += item.price * item.quantity;
+    });
+
+    // Return the total amount formatted as a currency
+    return formatCurrency(total);
+  }
+
+  function formatCurrency(amount) {
+    // Add currency formatting logic here based on your requirements
+    // For example, you can use toFixed() method to round the amount to 2 decimal places
+    return "$" + amount.toFixed(2);
+  }
 
   if (!orderDetails) {
     return <div>Loading order details...</div>;
@@ -47,7 +64,7 @@ const OrderDetails = () => {
   return (
     <div className="orderdetails">
       <div className="top-div">
-        <button onClick={handleGoBack}>Go back to Order Page</button>
+        <button onClick={handleGoBack}> &lt;&lt; Go back to Order Page</button>
         <h2>
           Order Details by Order ID: <span>{orderDetails.orderID}</span>
         </h2>
@@ -57,7 +74,7 @@ const OrderDetails = () => {
           <img src={CustomerPhoto} alt="customer" />
         </div>
         <div className="card-text">
-          <span>Name: {orderDetails.name}</span>
+          <span>{orderDetails.name}</span>
         </div>
       </div>
       {/* <div className="totalcost">Total Cost: {orderDetails.totalCost}</div> */}
@@ -71,14 +88,29 @@ const OrderDetails = () => {
         <div className="address">Address: {orderDetails.address}</div>
         <div className="phone">Phone: {orderDetails.phone}</div>
       </div>
-      <div className="item-container">
-        {orderDetails.cart.map((item) => (
-          <div key={item.id} className="item">
-            <p>{item.name}</p>
-            <p>{item.quantity}</p>
-            <p>{item.price}</p>
-          </div>
-        ))}
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            {orderDetails.cart.map((item) => (
+              <tr key={item.id}>
+                <td>{item.name}</td>
+                <td>{item.quantity}</td>
+                <td>{item.price}</td>
+              </tr>
+            ))}
+            <tr class="total-row">
+              <td>Total Amount:</td>
+              <td colspan="2">{calculateTotalAmount()}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

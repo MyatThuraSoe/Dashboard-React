@@ -1,6 +1,6 @@
 .orderdetails {
   display: flex;
-  background-color: #ddde9b;
+  background-color: #e0e0d5;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
@@ -23,30 +23,38 @@
 }
 .top-div button {
   width: fit-content;
-  padding: 5px 10px;
+  padding: 5px 16px;
+  border-radius: 15px;
+}
+.top-div button:hover {
+  color: white;
+  background-color: rgb(245, 223, 99);
 }
 .first-card {
   width: fit-content;
   display: flex;
   justify-content: center;
   background-color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
 }
 .first-card .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 .first-card .image-container img {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
 }
 .first-card .card-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 .totalcost {
   padding: 2rem;
@@ -60,7 +68,7 @@
   margin-left: 1rem;
 }
 .second-card > div {
-  padding: 6px;
+  padding: 1rem;
   background-color: rgb(255, 255, 255);
   margin-bottom: 1rem;
   border-radius: 10px;
@@ -70,10 +78,49 @@
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 .contact-details > div {
   background: #fff;
   border-radius: 10px;
   margin-bottom: 1rem;
-  padding: 6px;
+  padding: 1rem;
+}
+
+.table-container {
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: fit-content;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f5f0e1;
+  text-align: left;
+  color: #8f8f73;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f7f7f2;
+}
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #eaeaea;
+}
+.total-row {
+  background-color: #ffffff;
+  font-weight: bold;
 }
